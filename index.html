@@ -82,13 +82,17 @@
 
     <section class="container mx-auto py-12 px-6 bg-gray-200">
         <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Todo List</h2>
-        <ul class="list-disc pl-6" id="todoList">
-            <li>Add a section for testimonials</li>
-            <li>Implement a pricing table</li>
-            <li>Add a call to action button to the footer</li>
-        </ul>
-        <input type="text" id="newTodo" placeholder="Add new todo">
-        <button onclick="addTodo()">Add</button>
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <ul class="list-disc pl-6" id="todoList">
+                <li>Add a section for testimonials</li>
+                <li>Implement a pricing table</li>
+                <li>Add a call to action button to the footer</li>
+            </ul>
+            <div class="flex items-center mt-4">
+                <input type="text" id="newTodo" placeholder="Add new todo" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-2">
+                <button onclick="addTodo()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus-shadow-outline">Add</button>
+            </div>
+        </div>
     </section>
 
     <footer class="bg-gray-800 text-white py-6">
