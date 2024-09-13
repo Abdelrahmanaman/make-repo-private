@@ -3,113 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Minimalist Landing Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-br from-purple-500 to-pink-500 font-sans">
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto py-4 px-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">Your Brand Name</h1>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#" class="text-gray-600 hover:text-gray-800">Features</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-gray-800">Pricing</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-gray-800">About</a></li>
-                    <li><a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="container mx-auto py-12 px-6">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-1/2">
-                <h2 class="text-4xl font-bold text-white mb-4">Headline for your product or service</h2>
-                <p class="text-lg text-white mb-6">
-                    A brief description of your product or service. Explain its benefits and why people should use it.
-                </p>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition duration-300 ease-in-out transform hover:scale-105">Learn More</button>
-            </div>
-            <div class="md:w-1/2 mt-6 md:mt-0">
-                <img src="https://placehold.co/600x400" alt="Product Image" class="rounded-lg shadow-md">
-            </div>
-        </div>
-    </section>
-
-    <section class="container mx-auto py-12 px-6 bg-gray-200">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Key Features</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <svg class="w-12 h-12 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.059m0-13.063h-3.747l1.25-1.25 2.497 2.497 1.25-1.25H12z"></path></svg>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Feature 1</h3>
-                <p class="text-gray-600">A brief description of the feature.</p>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <svg class="w-12 h-12 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.059m0-13.063h-3.747l1.25-1.25 2.497 2.497 1.25-1.25H12z"></path></svg>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Feature 2</h3>
-                <p class="text-gray-600">A brief description of the feature.</p>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <svg class="w-12 h-12 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.059m0-13.063h-3.747l1.25-1.25 2.497 2.497 1.25-1.25H12z"></path></svg>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Feature 3</h3>
-                <p class="text-gray-600">A brief description of the feature.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mx-auto py-12 px-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Get in Touch</h2>
-        <form class="max-w-md mx-auto">
-            <div class="mb-4">
-                <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
-                <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
-            </div>
-            <div class="mb-4">
-                <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
-                <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
-            </div>
-            <div class="mb-6">
-                <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
-                <textarea id="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
-            </div>
-            <div class="flex items-center justify-center">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus-shadow-outline" type="submit">
-                    Send
-                </button>
-            </div>
-        </form>
-    </section>
-
-    <section class="container mx-auto py-12 px-6 bg-gray-200">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Todo List</h2>
-        <div class="bg-white rounded-lg shadow-md p-6">
-            <ul class="list-disc pl-6" id="todoList">
-                <li>Add a section for testimonials</li>
-                <li>Implement a pricing table</li>
-                <li>Add a call to action button to the footer</li>
-            </ul>
-            <div class="flex items-center mt-4">
-                <input type="text" id="newTodo" placeholder="Add new todo" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-2">
-                <button onclick="addTodo()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus-shadow-outline">Add</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2023 Your Brand Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        function addTodo() {
-            const newTodoText = document.getElementById('newTodo').value;
-            const todoList = document.getElementById('todoList');
-            const newTodoItem = document.createElement('li');
-            newTodoItem.textContent = newTodoText;
-            todoList.appendChild(newTodoItem);
-            document.getElementById('newTodo').value = '';
-        }
-    </script>
+<body>
+    <div class="container">
+        <h1>Minesweeper</h1>
+        <div class="game-board" id="gameBoard"></div>
+        <button id="resetButton">New Game</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
