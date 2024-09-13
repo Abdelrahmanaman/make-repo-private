@@ -16,9 +16,25 @@ class Minesweeper {
         this.gameOver = false;
         this.gameBoardElement = document.getElementById('gameBoard');
         this.resetButton = document.getElementById('resetButton');
+        this.gameOverModal = document.getElementById('gameOverModal');
         this.createBoard();
         this.renderBoard();
         this.resetButton.addEventListener('click', this.resetGame.bind(this));
+
+        // Get the <span> element that closes the modal
+        const span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = () => {
+            this.gameOverModal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = (event) => {
+            if (event.target == this.gameOverModal) {
+                this.gameOverModal.style.display = "none";
+            }
+        }
     }
 
     createBoard() {
@@ -105,7 +121,7 @@ class Minesweeper {
         if (this.board[index].isMine) {
             this.gameOver = true;
             this.revealAllMines();
-            alert('Game Over! You hit a mine.');
+            this.gameOverModal.style.display = "block";
         } else if (!this.board[index].isRevealed) {
             this.revealCell(index);
         }
@@ -161,6 +177,7 @@ class Minesweeper {
         this.gameStarted = false;
         this.createBoard();
         this.renderBoard();
+        this.gameOverModal.style.display = "none";
     }
 }
 
